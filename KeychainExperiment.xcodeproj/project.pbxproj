@@ -11,6 +11,10 @@
 		18D478422A72DEC600B9311D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D478412A72DEC600B9311D /* ContentView.swift */; };
 		18D478442A72DEC700B9311D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D478432A72DEC700B9311D /* Assets.xcassets */; };
 		18D478472A72DEC700B9311D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D478462A72DEC700B9311D /* Preview Assets.xcassets */; };
+		18D4784F2A72DF2100B9311D /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D4784E2A72DF2100B9311D /* KeychainService.swift */; };
+		18D478512A72DFC500B9311D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D478502A72DFC500B9311D /* ViewModel.swift */; };
+		18D478562A72E23800B9311D /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D478552A72E23800B9311D /* Credentials.swift */; };
+		18D478582A72E3DB00B9311D /* KeychainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D478572A72E3DB00B9311D /* KeychainError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		18D478432A72DEC700B9311D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18D478462A72DEC700B9311D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		18D478482A72DEC700B9311D /* KeychainExperiment.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeychainExperiment.entitlements; sourceTree = "<group>"; };
+		18D4784E2A72DF2100B9311D /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		18D478502A72DFC500B9311D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		18D478552A72E23800B9311D /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		18D478572A72E3DB00B9311D /* KeychainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +60,10 @@
 		18D4783E2A72DEC600B9311D /* KeychainExperiment */ = {
 			isa = PBXGroup;
 			children = (
+				18D478542A72E22F00B9311D /* Model */,
+				18D478532A72E03200B9311D /* Services */,
+				18D478522A72E02900B9311D /* Views */,
 				18D4783F2A72DEC600B9311D /* KeychainExperimentApp.swift */,
-				18D478412A72DEC600B9311D /* ContentView.swift */,
 				18D478432A72DEC700B9311D /* Assets.xcassets */,
 				18D478482A72DEC700B9311D /* KeychainExperiment.entitlements */,
 				18D478452A72DEC700B9311D /* Preview Content */,
@@ -67,6 +77,32 @@
 				18D478462A72DEC700B9311D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18D478522A72E02900B9311D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18D478502A72DFC500B9311D /* ViewModel.swift */,
+				18D478412A72DEC600B9311D /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18D478532A72E03200B9311D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				18D4784E2A72DF2100B9311D /* KeychainService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		18D478542A72E22F00B9311D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18D478552A72E23800B9311D /* Credentials.swift */,
+				18D478572A72E3DB00B9311D /* KeychainError.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +177,10 @@
 			files = (
 				18D478422A72DEC600B9311D /* ContentView.swift in Sources */,
 				18D478402A72DEC600B9311D /* KeychainExperimentApp.swift in Sources */,
+				18D478562A72E23800B9311D /* Credentials.swift in Sources */,
+				18D478512A72DFC500B9311D /* ViewModel.swift in Sources */,
+				18D478582A72E3DB00B9311D /* KeychainError.swift in Sources */,
+				18D4784F2A72DF2100B9311D /* KeychainService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,17 +1,13 @@
-//
-//  KeychainExperimentApp.swift
-//  KeychainExperiment
-//
-//  Created by Ferenc Nagy on 2023-07-27.
-//
-
 import SwiftUI
 
 @main
 struct KeychainExperimentApp: App {
+    @StateObject private var vm = ViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(vm)
         }
     }
 }
